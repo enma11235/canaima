@@ -1,0 +1,80 @@
+Bienvenido a Canaima GNU/Linux.
+
+COMO ESTABLECER UN REPOSITORIO REMOTO EN GIT?
+
+A veces cuando iniciamos un nuevo reposorio de git, tenemos la intencion
+de conectarlo con un repositorio remoto, usualmente gitHub. para eso,
+es tan simple como acceder a la configuracion de git, e indicarle 
+que queremos que nuestro remoto sea <url-del-remoto> y que lo vamos
+a llamar origin (o cualquier nombre).
+
+git remote add origin <url>
+
+Lo primero que debes conocer es el concepto de "Terminal".
+El sistema operativo puedes imaginarlo como una maquina que ejecuta
+tus instrucciones. Esas instrucciones pueden ser dadas a traves de 
+"comandos" o a traves de la "interfaz grafica". Si quieres ser un
+verdadero pro de linux y de las computadoras en general, te recomiendo
+que te familiarices con la terminal :).
+
+Otra cosa muy importante con la que te debes familiarizar es con el sistema
+de paquetes de canaima. Veras, un sistema operativo esta compuesto de muchas
+piezas interrelacionadas, pero independientes. Cada una de estas piezas
+de software son "empaquetadas" y subidas al repositorio de Canaima.
+
+Veamos como empaquetar nuestra propia aplicacion:
+Lo primero que necesitamos es un software. Por ejemplo, podemos crear
+un sencillo "Hola Mundo" en C. Para eso, vamos a necesitar
+
+Para empezar nuestro recorrido por este sistema operativo, te voy a pedir
+que presiones la combinacion de teclas CTRL + ALT + T para abrir una
+ventana de terminal.
+
+Ahora mismo estas leyendo un documento de texto plano a traves del editor
+de texto Nano. Nano es un programa que se ejecuta en la terminal, es decir,
+no tiene un interfaz grafiaca. Estos programas son ma veloces ya que 
+consumen menos recursos. 
+
+Alguna vez has escrito un programa de computadora?
+
+QUE ES EL GRUB?
+
+El GRUB es el encargado de cargar el Kernel a la memoria al momento de
+encender tu computadora. Cuando enciendes tu computadora, el BIOS realiza un
+proceso conocido como POST para verificar que el hardware esta funcionando
+correctamente. Luego el BIOS busca un dispositivo de arranque (SSD, USB, etc).
+y lee el primer sector del disco conocido como Master Boot Record (MBR).
+
+El MBR ocupa los primeros 512 bytes del disco y contiene dos cosas 
+importantes: La tabla de particiones del disco, y el cargador de arranque
+(bootloader), el cual es una pequena parte del GRUB llamada Stage1.
+
+Existen varios dispositivos de almacenamiento de datos, entre ellos se encuentran
+los discos duros (HDD), los dispositivos de estado solido (SSD), y los pendrives
+(USB). En tu dispositivo de almacenamiento se encuentra el sistema operativo
+Canaima :), y tambien se encuentra el bootloader, o GRUB, especificamente
+en el primer sector de tu disco. Y esto debe ser asi porque el BIOS revisa
+ese primer sector al momento de encender tu computadora.
+
+Si quieres echar un vistazo al codigo fuente del GRUB, podemos  
+
+La primera fase del GRUB (Stage1) tiene la unica funcion de localizar y cargar
+la segunda fase de GRUB, que se encuentra en el sisteama de archivos,
+normalmente en la carpeta /boot/grub.
+
+Stage1 carga Stage2 en la memoria desde el discoy es en esta fase donde GRUB ya
+tiene acceso completo al sistema de archivos y puede leer su archivo
+de configuracion y los modulos.
+
+GRUB Stage2 ya cargado en la memoria presenta el menu de arranque, desde
+donde el usuario puede seleccionar un sistema operativo o una 
+configuracion de kernel. Luego GRUB carga el kernel de Linux a la memoria
+junto con el initrd (initial ramdisk, un arhchivo que contiene los
+controladores iniciales que necesita el kernel para arrancar).
+
+Finalmente GRUB pasa el control al kernel de Linux, que continua el proceso 
+de arranque del sistema operativo.
+
+El kernel utiliza una imagen del sistema de archivos llamada initramfs o initrd
+que es un sistema de archivos temporal cargado en memoria.
+
