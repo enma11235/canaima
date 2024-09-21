@@ -4,19 +4,31 @@
 RUTA_A_AGREGAR="/usr/games"
 
 # Archivo de configuración del shell (puede ser .bashrc, .zshrc, etc.)
-ARCHIVO_CONFIGURACION="$HOME/.bashrc"  # Cambia si usas otro shell como zsh
+ARCHIVO_CONFIGURACION1="$HOME/.bashrc"
+ARCHIVO_CONFIGURACION2="$HOME/.zshrc"
 
 # Verifica si la ruta ya está en el PATH
 if [[ ":$PATH:" != *":$RUTA_A_AGREGAR:"* ]]; then
-    echo "Agregando $RUTA_A_AGREGAR al PATH en $ARCHIVO_CONFIGURACION"
+    echo "Agregando $RUTA_A_AGREGAR al PATH en $ARCHIVO_CONFIGURACION1"
     
     # Agregar la línea al archivo de configuración si no está presente
-    echo "export PATH=\"\$PATH:$RUTA_A_AGREGAR\"" >> "$ARCHIVO_CONFIGURACION"
+    echo "export PATH=\"\$PATH:$RUTA_A_AGREGAR\"" >> "$ARCHIVO_CONFIGURACION1"
     
     # Recargar el archivo de configuración
-    source "$ARCHIVO_CONFIGURACION"
+    source "$ARCHIVO_CONFIGURACION1"
     
     echo "Ruta agregada exitosamente."
+
+    echo "Agregando $RUTA_A_AGREGAR al PATH en $ARCHIVO_CONFIGURACION2"
+    
+    # Agregar la línea al archivo de configuración si no está presente
+    echo "export PATH=\"\$PATH:$RUTA_A_AGREGAR\"" >> "$ARCHIVO_CONFIGURACION2"
+    
+    # Recargar el archivo de configuración
+    source "$ARCHIVO_CONFIGURACION2"
+    
+    echo "Ruta agregada exitosamente."
+
 else
     echo "La ruta $RUTA_A_AGREGAR ya está en el PATH."
 fi
