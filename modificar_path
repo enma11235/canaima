@@ -1,34 +1,26 @@
 #!/bin/bash
 
-# Ruta que quieres agregar al PATH
-RUTA_A_AGREGAR="/usr/games"
+# Archivo de configuración global de Zsh
+ZSHRC_GLOBAL=""
 
-# Archivo de configuración del shell (puede ser .bashrc, .zshrc, etc.)
-ARCHIVO_CONFIGURACION1="$HOME/.bashrc"
-ARCHIVO_CONFIGURACION2="$HOME/.zshrc"
-
-# Verifica si la ruta ya está en el PATH
-if [[ ":$PATH:" != *":$RUTA_A_AGREGAR:"* ]]; then
-    echo "Agregando $RUTA_A_AGREGAR al PATH en $ARCHIVO_CONFIGURACION1"
-    
-    # Agregar la línea al archivo de configuración si no está presente
-    echo "export PATH=\"\$PATH:$RUTA_A_AGREGAR\"" >> "$ARCHIVO_CONFIGURACION1"
-    
-    # Recargar el archivo de configuración
-    source "$ARCHIVO_CONFIGURACION1"
-    
-    echo "Ruta agregada exitosamente."
-
-    echo "Agregando $RUTA_A_AGREGAR al PATH en $ARCHIVO_CONFIGURACION2"
-    
-    # Agregar la línea al archivo de configuración si no está presente
-    echo "export PATH=\"\$PATH:$RUTA_A_AGREGAR\"" >> "$ARCHIVO_CONFIGURACION2"
-    
-    # Recargar el archivo de configuración
-    source "$ARCHIVO_CONFIGURACION2"
-    
-    echo "Ruta agregada exitosamente."
-
+# Verificar si /etc/zshrc existe
+if [ -f /etc/zshrc ]; then
+    ZSHRC_GLOBAL="/etc/zshrc"
+elif [ -f /etc/zsh/zshrc ]; then
+    ZSHRC_GLOBAL="/etc/zsh/zshrc"
 else
-    echo "La ruta $RUTA_A_AGREGAR ya está en el PATH."
+    echo "No se encontró el archivo de configuración global de Zsh."
+    exit 1
 fi
+
+# Verificar si /usr/games ya está en el PATH
+if grep -q "/usr/games" "$ZSHRC_GLOBAL"; then
+    echo "La ruta /usr/games ya está presente en el archivo $ZSHRC_GLOBAL."
+else
+    # Agregar la ruta /usr/games al PATH
+    echo 'export PATH=$PATH:/usr/games' | sudo tee -a "$ZSHRC_GLOBAL"
+    echo "Ruta /usr/games agregada al archivo $ZSHRC_GLOBAL."
+fi
+
+# Recargar el archivo para aplicar los cambios
+source "$ZSHRC_GLOBAL"
