@@ -1,0 +1,100 @@
+acl
+attr
+autoconf
+automake
+bash
+bc
+binutils
+bison
+bzip2
+check
+coreutils
+dejaGNU
+diffutils
+e2fsprogs
+elfutils
+expat
+expect
+file
+findutils
+flex
+flit-core
+gawk
+gcc
+gdbm
+gettext
+glibc
+gmp
+gperf
+grep
+groff
+grub
+gzip
+iana-etc
+ineutils
+inttool
+iproute2
+jinja2
+kbd
+kmod
+less
+lfs-bootscripts (en realidad no)
+libcap
+libffi
+libpipeline
+libtool
+libxcrypt
+linux
+m4
+make
+man-db
+man-pages
+markupsafe
+meson
+mpc
+mpfr
+ncurses
+ninja
+openssl
+patch
+perl
+pkgconf
+procps
+psmisc
+python
+python Documentation
+readline
+sed
+shadow
+sysklogd
+systemd
+systemd man pages
+sysvinit
+tar
+tcl
+tcl documentation
+texinfo
+time zone data
+udev-lfs tarball (en realidad no)
+util-linux
+vim
+wheel
+xml
+xz utils
+zlib
+zstd
+
+//parches
+
+bzip2 documentation patch
+coreutils internationalization fixes patch
+glibc memalign patch
+glibc fhs patch
+grub upstream fixes patch
+kbd backspace/delete fix patch
+readline upstream fix patch
+sysvinit consolidated patch
+
+
+
+
