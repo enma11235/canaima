@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Ruta que quieres agregar al PATH
+RUTA_A_AGREGAR="/usr/games"
+
+# Archivo de configuración del shell (puede ser .bashrc, .zshrc, etc.)
+ARCHIVO_CONFIGURACION="$HOME/.bashrc"  # Cambia si usas otro shell como zsh
+
+# Verifica si la ruta ya está en el PATH
+if [[ ":$PATH:" != *":$RUTA_A_AGREGAR:"* ]]; then
+    echo "Agregando $RUTA_A_AGREGAR al PATH en $ARCHIVO_CONFIGURACION"
+    
+    # Agregar la línea al archivo de configuración si no está presente
+    echo "export PATH=\"\$PATH:$RUTA_A_AGREGAR\"" >> "$ARCHIVO_CONFIGURACION"
+    
+    # Recargar el archivo de configuración
+    source "$ARCHIVO_CONFIGURACION"
+    
+    echo "Ruta agregada exitosamente."
+else
+    echo "La ruta $RUTA_A_AGREGAR ya está en el PATH."
+fi
