@@ -1,22 +1,12 @@
 #!/bin/bash
 
-apt remove gnome-games
-apt autoremove
-apt remove gnome
-apt autoremove
-apt remove atril
-apt remove qbitorrent
-apt remove gimp 
-apt remove inkscape
-apt remove onboard
-apt remove iamgemagik
-apt remove libreoffice
-apt remove libreoffice-base
-apt remove libreoffice-base-core
-apt remove libreoffice-common
-apt remove zutty
-apt remove libreoffice-base
-apt purge libreoffice-base-core libreoffice-base-drivers libreoffice-calc libreoffice-common \
+apt -y remove gnome-games gnome atril qbitorrent gimp inkscape \
+onboard iamgemagik libreoffice libreoffice-base libreoffice-base-core \
+libreoffice-common zutty libreoffice-base
+
+apt -y autoremove
+
+apt -y purge libreoffice-base-core libreoffice-base-drivers libreoffice-calc libreoffice-common \
 libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk3 libreoffice-help-common \ 
 libreoffice-help-en-us libreoffice-impress libreoffice-java-common libreoffice-l10n-es \
 libreoffice-math libreoffice-report-builder libreoffice-report-builder-bin \
