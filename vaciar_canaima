@@ -1,0 +1,5 @@
+apt -y remove adwaita-icon-theme accountsservice 7zip alsa-topology-conf alsa-ucm-conf \
+alsa-utils amd64-microcode anacron ant apache2-bin apparmor appstream aspell at-spi2-common \
+atmel-firmware avahi-daemon base-canaima binarios-canaima blends-tasks bluez bluez-firmware \
+bluez-obexd bsdextrautils build-essential busybox ca-certificates caca-utils chafa cpp cron \
+dialog file fdisk fakeroot
