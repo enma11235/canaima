@@ -1,3 +1,5 @@
+=====================Paquetes esenciales del sistema operativo ============================
+
 acl
 attr
 autoconf
@@ -163,6 +165,39 @@ kbd backspace/delete fix patch
 readline upstream fix patch
 sysvinit consolidated patch
 
+=========================PAQUETES ESENCIALES DEL ESCRITORIO GNOME========================
 
+gcr: contains libraries used for displaying certificates and accessing key stores.
+It also provides the viewer for crypto files on the GNOME Desktop. 
+  installed program: gcr-viwer
+  installed libraries: libgck-1.so, libgcr-base-3.so and libgcr-ui-3.so
+  installed directories: /usr/include/gck-1, /usr/include/gcr-3, and /usr/share/gtk-doc/html/{gcr,gck}
 
+gsettings-desktop-schemas: contains a collection of GSettings schemas for settings shared by various 
+components of a GNOME Desktop.
+  installed directory: /usr/include/gsettings-desktop-schemas y /usr/share/GConf/gsettings
+
+libsecret: ontains a GObject based library for accessing the Secret Service API.
+installed program: secret-tool
+installed library: libsecret-1.so
+installed Directories: /usr/include/libsecret-1 and /usr/share/doc/libsecret-0.21.4
+
+rest: contains a library that was designed to make it easier to access web services that
+claim to be "RESTful". It includes convenience wrappers for libsoup and libxml to make 
+remote usage of the RESTful API easier. 
+  installed programs: librest-demo (optional)
+  installed libraries: librest-1.0.so and librest-extras-1.0.so
+  installed directories: /usr/include/rest-1.0 and /usr/share/gtk-doc/html/rest-1.0
+
+totem-pl-parser:  contains a simple GObject-based library used to parse multiple playlist formats. 
+  installed libraries: libtotem-plparser-mini.so and libtotem-plparser.so
+  installed directories: /usr/include/totem-pl-parser and /usr/share/gtk-doc/html/totem-pl-parser
+
+vte: contains a virtual terminal widget for GTK applications. 
+  installed program: vte-2.91 and vte-2.91-gtk4
+  installed libraries: libvte-2.91.so and libvte-2.91-gtk4.so
+  installed directories: /usr/include/vte-2.91, /usr/include/vte-2.91-gtk4, and (optional) /usr/share/doc/vte-0.76.4
+
+=================PROGRAMAS DE USUARIO PARA EL ESCRITORIO GNOME===============================
+  
 
