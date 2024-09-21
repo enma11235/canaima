@@ -29,13 +29,78 @@ gperf
 grep
 groff
 grub
-gzip
+gzip: programs for compressing and decompressing files
+  installed programs: 
+    *gunzip
+    *gzexe
+    *gzip
+    *uncompress (hard link with gunzip)
+    *zcat
+    *zcmp
+    *zdiff
+    *zegrep
+    *zfgrep  
+    *zforce
+    *zless
+    *zmore 
+    *znew
 iana-etc
 ineutils
 inttool
-iproute2
+iproute2: programs for basic and advance IPv4 networking
+  installed programs: 
+    *bridge
+    *ctstat (link to lnstat)
+    *genl
+    *ifstat
+    *ip
+    *lnstat
+    *nstat
+    *routel
+    *rtacct
+    *rtmon
+    *rtmon
+    *rtpr
+    *rtstat (link to lnstat)
+    *ss
+    *tc
+  installed directories:
+    /etc/iproute2
+    /usr/lib/tc
+    /usr/share/doc/iproute
 jinja2
-kbd
+kbd: 
+  installed Programs:
+    *chvt
+    *deallocvt
+    *fgconsole
+    *getkeycodes
+    *kbdinfo
+    *kbd_mode
+    *kbdrate
+    *loadkeys
+    *loadunimap
+    *mapscrn
+    *openvt
+    *psfaddtable (link to psfxtable)
+    *psfgettable (link to psfxtable)
+    *psfstriptable (link to psfxtable)
+    *psfxtable
+    *setfont
+    *setkeycodes
+    *setleds
+    *setmetamode
+    *setvtrgb
+    *showconsolefont
+    *showkey
+    *unicode_start
+    *unicode_stop
+  installed directories:
+    /usr/share/consolefonts
+    /usr/share/consoletrans
+    /usr/share/keymaps
+    /usr/share/doc/kbd
+    /usr/share/unimaps
 kmod
 less
 lfs-bootscripts (en realidad no)
@@ -46,7 +111,8 @@ libtool
 libxcrypt
 linux
 m4
-make
+make:
+  Programa instalado: make (/usr/bin ?)
 man-db
 man-pages
 markupsafe
@@ -70,7 +136,9 @@ sysklogd
 systemd
 systemd man pages
 sysvinit
-tar
+tar: 
+  programa instalado: tar (/usr/bin/tar ?)
+  directorio instalado: /usr/share/doc/tar
 tcl
 tcl documentation
 texinfo
