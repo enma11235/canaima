@@ -1,26 +1,25 @@
 #!/bin/bash
 
-# Archivo de configuración global de Zsh
-ZSHRC_GLOBAL=""
+# Ruta a añadir
+NEW_PATH="/usr/games"
 
-# Verificar si /etc/zshrc existe
-if [ -f /etc/zshrc ]; then
-    ZSHRC_GLOBAL="/etc/zshrc"
-elif [ -f /etc/zsh/zshrc ]; then
-    ZSHRC_GLOBAL="/etc/zsh/zshrc"
-else
-    echo "No se encontró el archivo de configuración global de Zsh."
-    exit 1
-fi
+# Función para agregar la ruta al PATH en un archivo
+add_to_path() {
+    local file="$1"
+    if ! grep -q "export PATH=.*$NEW_PATH" "$file"; then
+        echo "export PATH=\"\$PATH:$NEW_PATH\"" >> "$file"
+        echo "Añadido $NEW_PATH a $file"
+    else
+        echo "$NEW_PATH ya está en $file"
+    fi
+}
 
-# Verificar si /usr/games ya está en el PATH
-if grep -q "/usr/games" "$ZSHRC_GLOBAL"; then
-    echo "La ruta /usr/games ya está presente en el archivo $ZSHRC_GLOBAL."
-else
-    # Agregar la ruta /usr/games al PATH
-    echo 'export PATH=$PATH:/usr/games' | sudo tee -a "$ZSHRC_GLOBAL"
-    echo "Ruta /usr/games agregada al archivo $ZSHRC_GLOBAL."
-fi
+# Agregar la ruta a Bash
+add_to_path "/etc/profile"
+add_to_path "/etc/bash.bashrc"
 
-# Recargar el archivo para aplicar los cambios
-source "$ZSHRC_GLOBAL"
+# Agregar la ruta a Zsh
+add_to_path "/etc/zsh/zshenv"
+add_to_path "/etc/zsh/zshrc"
+
+echo "Script ejecutado. Recuerda reiniciar la sesión o abrir una nueva terminal para aplicar los cambios."
