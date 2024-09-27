@@ -1,2 +1,0 @@
-In slot	[obj]	nil	nil	nil
-In slot	[obj]	foo	bar	42

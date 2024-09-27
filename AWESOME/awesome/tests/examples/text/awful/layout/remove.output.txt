@@ -1,5 +1,0 @@
-Before:	floating
-Before:	tile
-Before:	max
-After:	floating
-After:	max
