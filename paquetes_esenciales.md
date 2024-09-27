@@ -6,9 +6,9 @@ autoconf
 automake  
 bash  
 bc  
-binutils  
+[binutils](https://www.linuxfromscratch.org/lfs/view/stable/chapter05/binutils-pass1.html)    
 bison  
-bzip2  
+[bzip2](https://www.linuxfromscratch.org/lfs/view/stable/chapter08/bzip2.html)  
 check  
 coreutils  
 dejaGNU  
@@ -22,10 +22,10 @@ findutils
 flex  
 flit-core  
 gawk  
-gcc  
+[gcc](https://www.linuxfromscratch.org/lfs/view/stable/chapter05/gcc-pass1.html)  
 gdbm  
 gettext  
-glibc  
+[glibc](https://www.linuxfromscratch.org/lfs/view/stable/chapter08/glibc.html)  
 gmp  
 gperf  
 grep  
@@ -50,7 +50,7 @@ linux
 m4  
 make  
 man-db  
-man-pages  
+[man-pages](https://www.linuxfromscratch.org/lfs/view/stable/chapter08/man-pages.html)  
 markupsafe  
 meson  
 mpc  
@@ -82,9 +82,9 @@ util-linux
 vim  
 wheel  
 xml  
-xz utils  
-zlib  
-zstd  
+[xz utils](https://www.linuxfromscratch.org/lfs/view/stable/chapter08/xz.html)  
+[zlib](https://www.linuxfromscratch.org/lfs/view/stable/chapter08/zlib.html)  
+[zstd](https://www.linuxfromscratch.org/lfs/view/stable/chapter08/zstd.html)  
 
 ## parches
 
@@ -103,15 +103,8 @@ sysvinit consolidated patch
 [gsettings-desktop-schemas](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#gsettings-desktop-schemas)  
 [libsecret](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#libsecret)  
 [rest](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#rest)  
-totem-pl-parser:  contains a simple GObject-based library used to parse multiple playlist formats. 
-  installed libraries: libtotem-plparser-mini.so and libtotem-plparser.so
-  installed directories: /usr/include/totem-pl-parser and /usr/share/gtk-doc/html/totem-pl-parser
-
-vte: contains a virtual terminal widget for GTK applications. 
-  installed program: vte-2.91 and vte-2.91-gtk4
-  installed libraries: libvte-2.91.so and libvte-2.91-gtk4.so
-  installed directories: /usr/include/vte-2.91, /usr/include/vte-2.91-gtk4, and (optional) /usr/share/doc/vte-0.76.4
-
+[totem-pl-parser](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#totem-pl-parser)  
+[VTE](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#vte)  
 yelp
 geocode-glib
 Gjs
