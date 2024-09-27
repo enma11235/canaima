@@ -1,12 +1,22 @@
 #!/bin/bash
 
+#Este script modifica los archivos:
+
+#/etc/profile
+#/etc/bash.bashrc
+#/etc/zsh/zshrc
+#/etc/zsh/zshenv
+
+#para agregar la ruta /usr/games a la variable path
+#en cada uno de ellos.
+
 # Ruta a añadir
-NEW_PATH="/usr/games"
+GAMES="/usr/games"
 
 # Función para agregar la ruta al PATH en un archivo
 add_to_path() {
     local file="$1"
-    if ! grep -q "export PATH=.*$NEW_PATH" "$file"; then
+    if [! grep -q "export PATH=*$GAMES" "$file"]; then
         echo "export PATH=\"\$PATH:$NEW_PATH\"" >> "$file"
         echo "Añadido $NEW_PATH a $file"
     else
@@ -21,5 +31,3 @@ add_to_path "/etc/bash.bashrc"
 # Agregar la ruta a Zsh
 add_to_path "/etc/zsh/zshenv"
 add_to_path "/etc/zsh/zshrc"
-
-echo "Script ejecutado. Recuerda reiniciar la sesión o abrir una nueva terminal para aplicar los cambios."
