@@ -240,9 +240,9 @@ Yelp
 
 ===================GNOME Applications======================
 
-[Baobab](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#baobab)
-Brasero
-EOG
+[Baobab](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#baobab)  
+[Brasero](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#brasero)  
+[EOG](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#eog)  
 Evince
 Evolution
 File-Roller
