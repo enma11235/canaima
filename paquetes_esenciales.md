@@ -1,3 +1,11 @@
+Nota: esta lita (todavia en construccion) contiene una lista de todos los paquetes "necesarios" para el sistema
+Que criterio estoy usando para decidir si un paquete es necesario o no? Bueno, estoy tomando los paquetes de
+Linux From Scratch y Beyond Linux From Scratch como necesarios, ya que Linux From Scratch es (eso creo) la distribucion
+mas basica que existe.
+
+El objetuvo de esta lista tambien es que sea una referencia para aquellas personas que desean estudiar los paquetes
+de Canaima
+
 # paquetes del LFS
 
 acl  
