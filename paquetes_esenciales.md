@@ -165,13 +165,9 @@ kbd backspace/delete fix patch
 readline upstream fix patch
 sysvinit consolidated patch
 
-=========================PAQUETES ESENCIALES DEL ESCRITORIO GNOME========================
+#Libraries
 
-gcr: contains libraries used for displaying certificates and accessing key stores.
-It also provides the viewer for crypto files on the GNOME Desktop. 
-  installed program: gcr-viwer
-  installed libraries: libgck-1.so, libgcr-base-3.so and libgcr-ui-3.so
-  installed directories: /usr/include/gck-1, /usr/include/gcr-3, and /usr/share/gtk-doc/html/{gcr,gck}
+[Gcr](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#gcr)  
 
 gsettings-desktop-schemas: contains a collection of GSettings schemas for settings shared by various 
 components of a GNOME Desktop.
@@ -218,7 +214,7 @@ Tracker-miners
 GSound
 xdg-desktop-portal-gnome
 
-===============GNOME Desktop Components =======================
+#GNOME Desktop Components
 
 DConf-0.40.0 / DConf-Editor
 gnome-backgrounds
@@ -238,13 +234,13 @@ gnome-tweaks
 gnome-user-docs
 Yelp
 
-===================GNOME Applications======================
+#GNOME Applications
 
 [Baobab](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#baobab)  
 [Brasero](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#brasero)  
 [EOG](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#eog)  
-Evince
-Evolution
+[Evince](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#evince)  
+[Evolution](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#evolution)  
 File-Roller
 gnome-calculator
 gnome-color-manager
