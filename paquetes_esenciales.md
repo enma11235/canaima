@@ -1,4 +1,4 @@
-# paquetes esenciales del sistema operativo
+# paquetes del LFS
 
 acl  
 attr  
@@ -96,6 +96,93 @@ grub upstream fixes patch
 kbd backspace/delete fix patch  
 readline upstream fix patch  
 sysvinit consolidated patch  
+
+# paquetes del BLFS
+
+# Security
+
+[make-ca]()  
+[CrackLib]()  
+[cryptsetup]()  
+[Cyrus SASL]()  
+[GnuPG]()  
+[GnuTLS]()  
+[GPGME]()  
+[iptables]()  
+[libcap]()  
+[Linux-PAM]()  
+[liboauth]()  
+[libpwquality]()  
+[MIT Kerberos]()  
+[Nettle]()  
+[NSS]()  
+[OpenSSH]()  
+[p11-kit]()  
+[Polkit]()  
+[polkit-gnome]()  
+[Shadow]()  
+[ssh-askpass]()  
+[stunnel]()  
+[Sudo]()  
+[Tripwire]()  
+
+# File Systems and Disk Management  
+
+[btrfs-progs]()  
+[dosfstools]()  
+[Fuse]()  
+[jfsutils]()  
+[LVM2]()  
+[mdadm]() 
+[btfs-3g-2022]()  
+[gptfdisk]()  
+[parted]() 
+[smartmontools]()  
+[sshfs]()  
+[xfsprogs]() 
+
+# Packages for UEFI Boot
+
+[efivar-39]()  
+[Ed]()  
+[Emacs]()  
+[Gedit]()  
+[JOE]()  
+[kate]()  
+[Mousepad]()  
+[Nano]()  
+[Vim]()
+
+# Shells  
+
+[Dash]()  
+[Tcsh]()  
+[zsh]()  
+
+# Virtualization
+
+[qemu]()  
+
+# General Libraries
+
+[Abseil-cpp]()  
+[AppStream]()  
+[apstream-glib]()  
+[Apr]()  
+[Aspell]()  
+[boost]()  
+[brotli]()  
+[CLucene]()  
+[dbus-glib]()  
+[Double-conversion]()  
+[duktape]()  
+[enchant]()  
+[Exempi]()  
+[fftw]()  
+[GLib]()  
+[GLibmm]()  
+[GMime]()  
+
 
 # Libraries
 
