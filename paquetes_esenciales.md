@@ -198,6 +198,69 @@ vte: contains a virtual terminal widget for GTK applications.
   installed libraries: libvte-2.91.so and libvte-2.91-gtk4.so
   installed directories: /usr/include/vte-2.91, /usr/include/vte-2.91-gtk4, and (optional) /usr/share/doc/vte-0.76.4
 
+yelp
+geocode-glib
+Gjs
+gnome-autoar
+gnome-desktop
+gnome-menus
+gnome-online-accounts
+Grilo
+libgdata
+libgee
+libgtop
+libgweather
+libpeas
+libshumate
+evolution-data-server
+Tracker
+Tracker-miners
+GSound
+xdg-desktop-portal-gnome
+
+===============GNOME Desktop Components =======================
+
+DConf-0.40.0 / DConf-Editor
+gnome-backgrounds
+Gvfs
+gexiv
+Nautilus
+gnome-bluetooth
+gnome-keyring
+gnome-settings-daemon
+Tecla
+gnome-control-center
+Mutter
+gnome-shell
+gnome-shell-extensions
+gnome-session
+gnome-tweaks
+gnome-user-docs
+Yelp
+
+===================GNOME Applications======================
+
+[Baobab](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#baobab)
+Brasero
+EOG
+Evince
+Evolution
+File-Roller
+gnome-calculator
+gnome-color-manager
+gnome-connections
+gnome-disk-utility
+gnome-maps
+gnome-nettool
+gnome-power-manager
+gnome-screenshot
+gnome-system-monitor
+gnome-terminal
+gnome-weather
+Gucharmap
+Seahorse
+Snapshot
+
 =================PROGRAMAS DE USUARIO PARA EL ESCRITORIO GNOME===============================
   
 
