@@ -99,7 +99,7 @@ sysvinit consolidated patch
 
 # Libraries
 
-[Gcr](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#gcr)  
+[Gcr](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#gcr): El paquete Gcr contiene bibliotecas utilizadas para mostrar certificados y acceder a almacenes de claves. También proporciona el visor para archivos criptográficos en el escritorio GNOME.    
 [gsettings-desktop-schemas](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#gsettings-desktop-schemas)  
 [libsecret](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#libsecret)  
 [rest](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#rest)  
