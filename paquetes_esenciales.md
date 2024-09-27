@@ -1,4 +1,4 @@
-=====================Paquetes esenciales del sistema operativo ============================
+# paquetes esenciales del sistema operativo
 
 acl
 attr
