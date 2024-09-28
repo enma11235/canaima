@@ -191,13 +191,20 @@ sysvinit consolidated patch
 [GLibmm]()  
 [GMime]()  
 
+# gnome
+
+En el contexto de GNOME, los "schemas" son archivos XML utilizados para definir configuraciones de aplicaciones y del sistema. Estos archivos describen las opciones de configuración disponibles para una aplicación específica dentro del entorno GNOME. Cada aplicación puede tener su propio schema, que especifica las preferencias y ajustes que los usuarios pueden modificar a través de herramientas como el editor de configuración de GNOME (gnome-control-center). Estos schemas ayudan a mantener la consistencia y la facilidad de configuración en el entorno de escritorio GNOME.  
 
 # Libraries
 
 [Gcr](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#gcr): El paquete Gcr contiene bibliotecas utilizadas para mostrar certificados y acceder a almacenes de claves. También proporciona el visor para archivos criptográficos en el escritorio GNOME.  
 
-[gsettings-desktop-schemas](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#gsettings-desktop-schemas)  
-[libsecret](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#libsecret)  
+[gsettings-desktop-schemas](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#gsettings-desktop-schemas): The GSettings Desktop Schemas package contains a collection of GSettings schemas for settings shared by various components of a GNOME Desktop.  
+
+
+[libsecret](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#libsecret): The libsecret package contains a GObject based library for accessing the Secret Service API.  
+
+
 [rest](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#rest)  
 [totem-pl-parser](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#totem-pl-parser)  
 [VTE](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#vte)  
