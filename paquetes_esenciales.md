@@ -228,10 +228,11 @@ Tracker-miners
 GSound
 xdg-desktop-portal-gnome
 
-#GNOME Desktop Components
+# GNOME Desktop Components
 
 DConf-0.40.0 / DConf-Editor
-gnome-backgrounds
+[gnome-backgrounds](): The GNOME Backgrounds package contains a collection of graphics files which can be used as backgrounds in the GNOME Desktop environment. Additionally, the package creates the proper framework and directory structure so that you can add your own files to the collection.  
+
 Gvfs
 gexiv
 Nautilus
@@ -248,7 +249,7 @@ gnome-tweaks
 gnome-user-docs
 Yelp
 
-#GNOME Applications
+# GNOME Applications
 
 [Baobab](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#baobab)  
 [Brasero](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#brasero)  
