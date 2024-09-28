@@ -230,7 +230,8 @@ xdg-desktop-portal-gnome
 
 # GNOME Desktop Components
 
-DConf-0.40.0 / DConf-Editor
+DConf-0.40.0 / DConf-Editor  
+
 [gnome-backgrounds](): The GNOME Backgrounds package contains a collection of graphics files which can be used as backgrounds in the GNOME Desktop environment. Additionally, the package creates the proper framework and directory structure so that you can add your own files to the collection.  
 
 Gvfs
