@@ -4,6 +4,8 @@ apt -y remove gnome-games gnome atril qbitorrent gimp inkscape \
 onboard iamgemagik libreoffice libreoffice-base libreoffice-base-core \
 libreoffice-common zutty libreoffice-base
 
+DConf
+
 apt -y autoremove
 
 apt -y purge libreoffice-base-core libreoffice-base-drivers libreoffice-calc libreoffice-common \
