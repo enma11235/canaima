@@ -201,13 +201,13 @@ En el contexto de GNOME, los "schemas" son archivos XML utilizados para definir 
 
 [gsettings-desktop-schemas](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#gsettings-desktop-schemas): The GSettings Desktop Schemas package contains a collection of GSettings schemas for settings shared by various components of a GNOME Desktop.  
 
-
 [libsecret](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#libsecret): The libsecret package contains a GObject based library for accessing the Secret Service API.  
 
+[rest](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#rest): contains a library that was designed to make it easier to access web services that claim to be "RESTful". It includes convenience wrappers for libsoup and libxml to make remote usage of the RESTful API easier.  
 
-[rest](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#rest)  
-[totem-pl-parser](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#totem-pl-parser)  
-[VTE](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#vte)  
+[totem-pl-parser](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#totem-pl-parser): The Totem PL Parser package contains a simple GObject-based library used to parse multiple playlist formats.  
+
+[VTE](https://www.linuxfromscratch.org/blfs/downloads/stable/BLFS-BOOK-12.2-sysv-nochunks.html#vte): 
 yelp
 geocode-glib
 Gjs
