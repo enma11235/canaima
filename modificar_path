@@ -1,18 +1,5 @@
 #!/bin/bash
 
-#Este script modifica los archivos:
-
-#/etc/profile
-#/etc/bash.bashrc
-#/etc/zsh/zshrc
-#/etc/zsh/zshenv
-
-#para agregar la ruta /usr/games a la variable path
-#en cada uno de ellos.
-
-# Ruta a añadir
-GAMES="/usr/games"
-
 # Función para agregar la ruta al PATH en un archivo
 add_to_path() {
     local file="$1"
